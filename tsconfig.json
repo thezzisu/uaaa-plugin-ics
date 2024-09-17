@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "exactOptionalPropertyTypes": true,
+    "declaration": true,
+    "types": ["node", "@uaaa/plugin-iaaa"],
+    "outDir": "lib"
+  },
+  "include": ["src/**/*.ts"]
+}

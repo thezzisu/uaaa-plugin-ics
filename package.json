@@ -1,4 +1,32 @@
 {
   "name": "uaaa-plugin-ics",
-  "packageManager": "yarn@4.2.2"
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "yarn@4.2.2",
+  "files": [
+    "lib"
+  ],
+  "bin": "lib/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "prepack": "run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@uaaa/plugin-iaaa": "^0.0.5",
+    "@uaaa/server": "^0.0.15",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "@uaaa/plugin-iaaa": "*",
+    "@uaaa/server": "*"
+  },
+  "dependencies": {
+    "clipanion": "^4.0.0-rc.4",
+    "ora": "^8.1.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
 }
