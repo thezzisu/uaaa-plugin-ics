@@ -1,6 +1,7 @@
 {
   "name": "uaaa-plugin-ics",
   "type": "module",
+  "version": "0.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -9,12 +10,14 @@
     "lib"
   ],
   "bin": "lib/cli.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
     "prepack": "run build"
   },
   "devDependencies": {
+    "@types/jsdom": "^21.1.7",
     "@types/node": "^22.5.5",
     "@uaaa/plugin-iaaa": "^0.0.5",
     "@uaaa/server": "^0.0.15",
@@ -26,6 +29,8 @@
   },
   "dependencies": {
     "clipanion": "^4.0.0-rc.4",
+    "jsdom": "^25.0.0",
+    "ky": "^1.7.2",
     "ora": "^8.1.0",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   }
